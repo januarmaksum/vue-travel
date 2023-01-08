@@ -2,7 +2,7 @@ export default {
   nitro: {
     preset: 'vercel-edge',
   },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/tailwind.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
