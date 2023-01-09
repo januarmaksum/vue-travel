@@ -1,6 +1,6 @@
 # NuxtJs
 
-_Live Update: https://travel-idt.vercel.app
+Live Update: https://travel-idt.vercel.app
 
 Look at the [Nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
