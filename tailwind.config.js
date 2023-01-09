@@ -9,7 +9,40 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': {
+          DEFAULT: '#d42029',
+          dark: '#be1d25'
+        }
+      }
+    },
+    container: {
+      center: true
+    },
+    corePlugins: {
+      container: false
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          '@screen sm': {
+            maxWidth: '540px',
+          },
+          '@screen md': {
+            maxWidth: '768px',
+          },
+          '@screen lg': {
+            maxWidth: '980px',
+          },
+          '@screen xl': {
+            maxWidth: '1140px',
+          },
+        }
+      })
+    }
+  ],
 }
